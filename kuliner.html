@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumatra Barat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .logo img {
+            width: 200px; 
+        }
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: relative; 
+            z-index: 1;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: gold;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .content {
+            padding: 20px;
+        }
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+        .destination {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .destination img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .destination-description h2 {
+            margin: 0 0 10px 0;
+        }
+        .destination-description p {
+            margin: 0;
+            
+        }
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 110%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; 
+            object-fit: cover;
+        }
+
+        .button-container {
+    text-align: center; /* Pusatkan tombol secara horizontal */
+}
+.custom-button:hover{
+  color:greenyellow;
+}
+
+.custom-button {
+    /* Gaya untuk tombol */
+    display: inline-block; 
+    padding: 10px 30px; /*Mengatur ukuran button*/
+    margin: 15px; /*Mengatur jarak antar button */
+    font-size: 16px; /*Mengatur ukuran huruf*/
+    font-weight: 500; /*Mengatur ketebalans huruf*/
+    font-family:'Segoe UI',sans-serif; /*Mengatur jenis huruf*/
+    text-align: center; /* mengatur penempatan horizontal dari teks di dalam sebuah elemen*/
+    text-decoration: none; /*Mengatur agar tidak memiliki decorasi*/
+    border: 5px solid ; /*Mengatur ukuran border*/
+    color:aliceblue; /*Mengatur warna huruf*/
+    background-color:dodgerblue; /*Mengatur warna latar belakang huruf*/
+    border-radius: 10px; /*Mengatur lekukan border*/
+    transition: all; /*Mengatur agar semua button memiliki transisi*/
+    transition-duration: 300ms; /*Mengatur durasi transisi*/
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="gambar/dinaspariwisata1.png" alt="Logo">
+        </div>
+        <h1>Dinas Pariwisata Provinsi Sumatra Barat</h1>
+        <nav>
+            <ul>
+                <li><a href="nagari.html">Home</a></li>
+                <li><a href="wisata.html">Wisata</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>10 Destinasi Wisata Terbaik di Sumatra Barat</h1>
+        <div class="destination-grid">
+            <div class="destination">
+                <img src="gambar/asamrao.jpg" alt="Destinasi 9">
+                <div class="destination-description">
+                    <h2>Asam Lauak Pasaman</h2>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="gambar/martabakmalabar.jpg" alt="Destinasi 2">
+                <div class="destination-description">
+                    <h2>Martabak Malabar</h2>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="gambar/satemaksyukur.jpg" alt="Destinasi 3">
+                <div class="destination-description">
+                    <h2>Sate Mak Syukur Padang Panjang</h2>
+                </div>
+            </div>
+            <div class="destination">
+                <img src="gambar/los-lambuang-bukittinggi-surga-nasi-kapau-di-sumatera-barat.jpg" alt="Destinasi 4">
+                <div class="destination-description">
+                    <h2>Los Lambuang Bukittinggi</h2>
+                </div>
+            </div>
+
+            <div class="destination">
+                <img src="gambar/lamang.webp" alt="Destinasi 4">
+                <div class="destination-description">
+                    <h2>Lamang Tapai</h2>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Wisata Sumbar</p>
+    </footer>
+</body>
+</html>
